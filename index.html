@@ -12,10 +12,21 @@
         <nav class="white">
             <div class="container">
                 <a href="#" class="brand-logo red-text">GNESSVUE</a>
-                    <ul class="right"><a href="#cooking" class="red-text">COOKING</a></ul>
-                    <ul class="right"><a href="#tech" class="red-text">TECH</a></ul>
-                    <ul class="right"><a href="#travel" class="red-text">TRAVEL</a></ul>
-                    <ul class="right"><a href="#fitness" class="red-text">FITNESS</a></ul>
+                <a href="#mobile-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#cooking" class="red-text">COOKING</a></li>
+                        <li><a href="#tech" class="red-text">TECH</a></li>
+                        <li><a href="#travel" class="red-text">TRAVEL</a></li>
+                        <li><a href="#fitness" class="red-text">FITNESS</a></li>
+                    </ul>
+
+                    <!-- SIDE NAV -->
+                <ul class="sidenav blue" id="mobile-sidenav">
+                    <li><a class="red-text" href="#cooking">COOKING</a></li>
+                    <li><a class="red-text" href="#tech">TECH</a></li>
+                    <li><a class="red-text" href="#travel">TRAVEL</a></li>
+                    <li><a class="red-text" href="#fitness">FITNESS</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -59,8 +70,8 @@
 <script>
     $(document).ready( ()=>{
         $(".sidenav").sidenav();
-        $(".collapsible").collapsible();
         $(".parallax").parallax();
+        $(".collapsible").collapsible();
     })
 </script>
 </html>
